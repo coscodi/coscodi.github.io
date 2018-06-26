@@ -174,9 +174,11 @@
   justify-content: space-between;
 }
 .bottomMsg .left{
-  margin-top: .48rem;
+  height: 100%;
+  /*padding-top: .48rem;*/
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 .bottomMsg .left .logo{
   width: .96rem;
@@ -188,11 +190,16 @@
   margin-left: .6rem;
   color: #777777;
 }
+.bottomMsg .left ul li{
+  font-size: .16rem;
+}
+
 .bottomMsg .right{
-  margin-top: .25rem;
   width: 3.9rem;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .bottomMsg .right .item{
   width: 1.1rem;
