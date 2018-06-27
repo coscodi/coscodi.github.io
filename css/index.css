@@ -1,3 +1,6 @@
+body{
+  font-size: 62.5%;
+}
 img{
   display: block;
 }
@@ -250,7 +253,7 @@ img{
   color: #777777;
 }
 .bottomMsg .left ul li{
-  font-size: .16em;
+  font-size: .16rem;
 }
 
 .bottomMsg .right{
@@ -272,7 +275,7 @@ img{
   width: 100%;
   text-align: center;
   line-height: .4rem;
-  font-size: .14em;
+  font-size: .14rem;
   color: #838383;
 }
 .footer{
@@ -285,7 +288,7 @@ img{
 .footer .lable{
   margin-right: .37rem;
   line-height: .72rem;
-  font-size: .12rem;
+  font-size: .14rem;
   color: #757575;
 }
 .footer .lable:first-child{
