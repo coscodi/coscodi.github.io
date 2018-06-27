@@ -58,6 +58,10 @@ img{
   background-color: rgba(0, 0, 0, .6);
   color: #ffffff;
 }
+.header .bottom .left li:hover{
+  background-color: #000000;
+  color: #ffffff;
+}
 .header .bottom .left li:hover .msgBox{
   display: block;
   z-index: 9999;
