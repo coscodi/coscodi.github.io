@@ -1,3 +1,6 @@
+img{
+  display: block;
+}
 .header{
   width: 100%;
   background-color: #ffffff;
@@ -19,14 +22,11 @@
 .header .top .products{
   margin: 0 .3rem 0 .5rem;
 }
+
 .header .center{
   margin: .24rem auto 0;
   width: 2.57rem;
   height: .94rem;
-  background-color: yellow;
-  text-align: center;
-  line-height: .94rem;
-  font-size: .18rem;
 }
 .header .bottom{
   position: relative;
@@ -38,7 +38,6 @@
 .header .bottom .left{
   width: 10rem;
   height: 100%;
-  /*border: 1px solid;*/
   display: flex;
 }
 .header .bottom .left li{
@@ -48,7 +47,6 @@
   line-height: .8rem;
   font-size: .24rem;
   color: #0a0a0a;
-  /*border: 1px solid;*/
 }
 .header .bottom .left li .msgBox{
   display: none;
@@ -68,7 +66,6 @@
 .header .bottom .right{
   width: 4.2rem;
   height: 100%;
-  /*background-color: yellow;*/
 }
 .header .bottom .seach{
   margin-top: .225rem;
@@ -83,7 +80,6 @@
   margin: .04rem 0.1rem 0 .06rem;
   width: .26rem;
   height: .26rem;
-  background-color: red;
 }
 .header .bottom .seach input{
   font-family: '宋体';
@@ -94,6 +90,22 @@
 
 .banner{
   width: 100%;
+}
+.banner .bannerItem{
+  position: relative;
+}
+.banner .bannerItem .button{
+  position: absolute;
+  top: 4.4rem;
+  left: 2.7rem;
+  width: 2.9rem;
+  height: .78rem;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  text-align: center;
+  line-height: .78rem;
+  color: #ffffff;
+  font-size: .22rem;
 }
 
 .aboutWe{
@@ -115,33 +127,45 @@
 }
 .aboutWe .content .item{
   width: 2.7rem;
-  /*border: 1px solid;*/
 }
 .aboutWe .content .item .img{
   width: 100%;
   height: 1.72rem;
-  background-color: cyan;
 }
-.aboutWe .content .item h3{
+.aboutWe .content .item h4{
   margin: .25rem 0 .15rem;
   width: 100%;
   text-align: center;
-  font-size: .24rem;
+  font-size: .23rem;
 }
 .aboutWe .content .item p{
   margin-bottom: .52rem;
   width: 100%;
-  font-size: .14rem;
-  line-height: .2rem;
+  font-size: .13rem;
+  line-height: .24rem;
 }
 .product{
   width: 100%;
-  height: 7.33rem;
-  background-color: yellow;
-  font-size: .4rem;
-  text-align: center;
-  line-height: 7.33rem;
+  position: relative;
 }
+.product img{
+  width: 100%;
+}
+.product .button{
+  position: absolute;
+  top: 4.4rem;
+  left: 2.7rem;
+  width: 2.9rem;
+  height: .78rem;
+  border: 1px solid;
+  border-radius: 3px;
+  text-align: center;
+  line-height: .78rem;
+  color: #0a0a0a;
+  font-size: .22rem;
+}
+
+
 .briefContent{
   margin: .35rem 0;
   width: 100%;
@@ -149,8 +173,41 @@
 }
 .briefContent .goods{
   flex: 1;
-  height: 5.85rem;
+  height: 6.27rem;
+  position: relative;
 }
+.briefContent .goods img{
+  width: 100%;
+}
+.briefContent .goods p{
+  width: 100%;
+  text-align: center;
+  font-size: .28rem;
+  color: #0a0a0a;
+}
+.briefContent .goods .bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.briefContent .goods .bottom .price{
+  width: 100%;
+  text-align: center;
+  line-height: .52rem;
+  font-size: .22rem;
+  color: rgb(254,0,102);
+}
+.briefContent .goods .bottom .button{
+  margin: 0 auto;
+  width: 1.56rem;
+  height: .46rem;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  line-height: .46rem;
+  font-size: .16rem;
+}
+
 .lineBottom{
   width: 100%;
   height: .4rem;
@@ -175,7 +232,6 @@
 }
 .bottomMsg .left{
   height: 100%;
-  /*padding-top: .48rem;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -183,7 +239,6 @@
 .bottomMsg .left .logo{
   width: .96rem;
   height: .96rem;
-  background-color: yellow;
   border-radius: 50%;
 }
 .bottomMsg .left ul{
@@ -191,7 +246,7 @@
   color: #777777;
 }
 .bottomMsg .left ul li{
-  font-size: .16rem;
+  font-size: .16em;
 }
 
 .bottomMsg .right{
@@ -213,7 +268,7 @@
   width: 100%;
   text-align: center;
   line-height: .4rem;
-  font-size: .14rem;
+  font-size: .14em;
   color: #838383;
 }
 .footer{
