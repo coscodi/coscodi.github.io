@@ -211,13 +211,20 @@
 
     <script>
         $(function(){
-            // console.log($('#header').height())
             var scrollTop =$('#header').height()
             $(window).scroll(function(){
                 if($(window).scrollTop() > scrollTop){
-                    $("#header").css({"position":"fixed","top":0, 'z-index': 99999});
+                    $("#header .bottom").css({
+                        "position":"fixed",
+                        "top":0,
+                        "z-index": 99999,
+                        "box-shadow": '0 .05rem .05rem rgba(0,0,0,.2)'
+                    });
                 }else{
-                    $("#header").css({"position":"static"});
+                    $("#header .bottom").css({
+                        "position":"relative",
+                        "box-shadow": 'none'
+                    });
                 }
             });
         });

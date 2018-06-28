@@ -10,17 +10,16 @@ img{
 }
 .header .top{
   width: 100%;
-  height: .43rem;
+  height: .35rem;
   background-color: rgb(129, 39, 65);
 }
 .header .top .lable{
   float: right;
-  width: 1.07rem;
   height: 100%;
   font-size: .18rem;
   color: #ffffff;
   text-align: center;
-  line-height: .43rem;
+  line-height: .35rem;
 }
 .header .top .products{
   margin: 0 .3rem 0 .5rem;
@@ -35,6 +34,7 @@ img{
   position: relative;
   width: 100%;
   height: .8rem;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
 }
@@ -103,14 +103,14 @@ img{
 }
 .banner .bannerItem .button{
   position: absolute;
-  top: 4.4rem;
+  top: 4rem;
   left: 2.7rem;
-  width: 2.9rem;
-  height: .78rem;
+  width: 2.7rem;
+  height: .58rem;
   border: 1px solid #ffffff;
   border-radius: 3px;
   text-align: center;
-  line-height: .78rem;
+  line-height: .58rem;
   color: #ffffff;
   font-size: .22rem;
 }
@@ -160,14 +160,14 @@ img{
 }
 .product .button{
   position: absolute;
-  top: 4.4rem;
+  top: 4rem;
   left: 2.7rem;
-  width: 2.9rem;
-  height: .78rem;
+  width: 2.7rem;
+  height: .58rem;
   border: 1px solid;
   border-radius: 3px;
   text-align: center;
-  line-height: .78rem;
+  line-height: .58rem;
   color: #0a0a0a;
   font-size: .22rem;
 }
@@ -182,6 +182,9 @@ img{
   flex: 1;
   height: 6.27rem;
   position: relative;
+}
+.briefContent .goods:hover{
+  box-shadow: 0 0 .05rem .05rem rgba(18,39,65,.2)
 }
 .briefContent .goods img{
   width: 100%;
