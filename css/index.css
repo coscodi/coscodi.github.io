@@ -50,16 +50,16 @@ img{
   }
 }
 .iconMove{
-  animation: icoMove 1s linear forwards;
+  animation: icoMove 0.1s linear forwards;
 }
 .icoGoBack{
-  animation: icoGoBack 1s linear forwards;
+  animation: icoGoBack 0.1s linear forwards;
 }
 .bottomMove{
-  animation: bottomMove 1s linear forwards;
+  animation: bottomMove 0.1s linear forwards;
 }
 .bottomGoBack{
-  animation: bottomGoBack 1s linear forwards;
+  animation: bottomGoBack 0.1s linear forwards;
 }
 
 
@@ -129,10 +129,10 @@ img{
   background-color: #000000;
   color: #ffffff;
 }
-.header .bottom .left li:hover .msgBox{
+/*.header .bottom .left li:hover .msgBox{
   display: block;
   z-index: 9999;
-}
+}*/
 
 .header .bottom .right{
   width: 4.2rem;
