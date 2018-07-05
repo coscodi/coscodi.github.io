@@ -4,6 +4,65 @@ body{
 img{
   display: block;
 }
+
+@keyframes icoMove{
+  from{
+    margin: .24rem 6.215rem 0;
+    width: 2.57rem;
+    height: .94rem;
+  }
+  to{
+    width: 2.056rem;
+    height: .752rem;
+    margin: 0 0 0 0.3rem;
+  }
+}
+@keyframes icoGoBack{
+  from{
+    width: 2.056rem;
+    height: .752rem;
+    margin: 0 0 0 0.3rem;
+  }
+  to{
+    margin: .24rem 6.215rem 0;
+    width: 2.57rem;
+    height: .94rem;
+  }
+}
+@keyframes bottomMove{
+  from{
+    width: 100%;
+    margin-right: 0;
+  }
+  to{
+    width: 80%;
+    margin-right: .3rem;
+  }
+}
+@keyframes bottomGoBack{
+  from{
+    width: 80%;
+    margin-right: .3rem;
+  }
+  to{
+    width: 100%;
+    margin-right: 0rem;
+  }
+}
+.iconMove{
+  animation: icoMove 1s linear forwards;
+}
+.icoGoBack{
+  animation: icoGoBack 1s linear forwards;
+}
+.bottomMove{
+  animation: bottomMove 1s linear forwards;
+}
+.bottomGoBack{
+  animation: bottomGoBack 1s linear forwards;
+}
+
+
 .header{
   width: 100%;
   background-color: #ffffff;
@@ -24,14 +83,19 @@ img{
 .header .top .products{
   margin: 0 .3rem 0 .5rem;
 }
-
-.header .center{
-  margin: .24rem auto 0;
+.header .content{
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+}
+.header .icoImg{
+  float: left;
+  margin: .24rem 6.215rem 0;
   width: 2.57rem;
   height: .94rem;
 }
 .header .bottom{
-  position: relative;
+  float: right;
   width: 100%;
   height: .8rem;
   background-color: #ffffff;
@@ -54,7 +118,7 @@ img{
 .header .bottom .left li .msgBox{
   display: none;
   position: absolute;
-  top: .8rem;
+  top: 1.98rem;
   left: 0;
   width: 15rem;
   height: 5.2rem;

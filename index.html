@@ -29,40 +29,42 @@
             <div class="lable products">全部产品 >></div>
             <div class="lable service">客服中心</div>
         </div>
-        <img class="center" src="images/logo.png">
-        <div class="bottom">
-            <ul class="left">
-                <li>
-                    <text>首页</text>
-                    <div class="msgBox">
-                        首页的数据
+        <div class="content clearfix">
+            <img class="icoImg" src="images/logo.png">
+            <div class="bottom">
+                <ul class="left">
+                    <li>
+                        <text>首页</text>
+                        <div class="msgBox">
+                            首页的数据
+                        </div>
+                    </li>
+                    <li>
+                        <text>品牌故事</text>
+                        <div class="msgBox">
+                            品牌故事的数据
+                        </div>
+                    </li>
+                    <li>
+                        <text>产品展示</text>
+                        <div class="msgBox">
+                            产品展示的数据
+                        </div>
+                    </li>
+                    <li>
+                        <text>购买渠道</text>
+                        <div class="msgBox">
+                            垢面渠道的数据
+                        </div>
+                    </li>
+                </ul>
+                <div class="right">
+                    <div class="seach">
+                        <img class="ico" src="images/search.png">
+                        <input type="text" name="seach" placeholder="搜索你想要的...">
                     </div>
-                </li>
-                <li>
-                    <text>品牌故事</text>
-                    <div class="msgBox">
-                        品牌故事的数据
-                    </div>
-                </li>
-                <li>
-                    <text>产品展示</text>
-                    <div class="msgBox">
-                        产品展示的数据
-                    </div>
-                </li>
-                <li>
-                    <text>购买渠道</text>
-                    <div class="msgBox">
-                        垢面渠道的数据
-                    </div>
-                </li>
-            </ul>
-            <div class="right">
-                <div class="seach">
-                    <img class="ico" src="images/search.png">
-                    <input type="text" name="seach" placeholder="搜索你想要的...">
                 </div>
-            </div>
+        </div>
         </div>
     </header>
     <section class="banner">
@@ -212,19 +214,34 @@
     <script>
         $(function(){
             var scrollTop =$('#header').height()
+            var contHeight =$('#header .content').height()
             $(window).scroll(function(){
                 if($(window).scrollTop() > scrollTop){
-                    $("#header .bottom").css({
+                    $("#header .content").css({
                         "position":"fixed",
-                        "top":0,
+                        "top": 0,
                         "z-index": 99999,
                         "box-shadow": '0 .05rem .05rem rgba(0,0,0,.2)'
                     });
+                    $("#header .msgBox").css({
+                        "top": ".8rem"
+                    });
+                    $(".icoImg").removeClass("icoGoBack")
+                    $("#header .content .bottom").removeClass("bottomGoBack")
+                    $(".icoImg").addClass("iconMove")
+                    $("#header .content .bottom").addClass("bottomMove")
                 }else{
-                    $("#header .bottom").css({
+                    $("#header .content").css({
                         "position":"relative",
                         "box-shadow": 'none'
                     });
+                    $("#header .msgBox").css({
+                        "top": "1.98rem"
+                    });
+                    $(".icoImg").addClass("icoGoBack")
+                    $("#header .content .bottom").addClass("bottomGoBack")
+                    $(".icoImg").removeClass("iconMove")
+                    $("#header .content .bottom").removeClass("bottomMove")
                 }
             });
         });
