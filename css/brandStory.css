@@ -87,6 +87,7 @@ img{
   width: 100%;
   background-color: #ffffff;
   position: relative;
+  border-bottom: 1px solid #e9e9e9;
 }
 .header .icoImg{
   float: left;
@@ -167,126 +168,150 @@ img{
 
 .banner{
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.banner .bannerItem{
-  position: relative;
+.banner img{
+  width: 14.46rem;
+  height: 5.5rem;
 }
-.banner .bannerItem .button{
-  position: absolute;
-  top: 4rem;
-  left: 2.7rem;
+.brandInfo{
+  margin-top: .6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.brandInfo img{
+  width: 3.14rem;
+  height: 4.1rem;
+}
+.brandInfo .msg{
+  margin-left: .77rem;
+  width: 3.08rem;
+}
+.brandInfo .msg img{
+  width: 100%;
+  height: 1rem;
+  display: block;
+}
+.brandInfo .msg p{
+  margin: .6rem auto 0;
+  width: 2.4rem;
+  font-size: .12rem;
+  color: #000000;
+  line-height: .2rem;
+}
+.introduce{
+  margin-top: 1.46rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introduce img{
+  width: 5.64rem;
+  height: 1rem;
+}
+.introduce p{
+  margin-top: .37rem;
+  width: 5.64rem;
+  font-size: .12rem;
+  color: #000000;
+  text-align: center;
+}
+.introduce1{
+  margin: 0.6rem auto 0;
+  width: 8.45rem;
+  height: 2.9rem;
+  background-image: url('../images/barandStory5.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.introduce1 .msgInfo{
+  margin-top: .4rem;
+  margin-left: .6rem;
   width: 2.7rem;
-  height: .58rem;
-  border: 1px solid #ffffff;
-  border-radius: 3px;
+}
+.introduce1 .msgInfo h3{
+  width: 100%;
   text-align: center;
-  line-height: .58rem;
-  color: #ffffff;
   font-size: .22rem;
+  color: #000000;
 }
-
-.aboutWe{
+.introduce1 .msgInfo .line{
+  margin: .15rem auto 0;
+  width: .86rem;
+  height: .02rem;
+  background-color: #333333;
+}
+.introduce1 .msgInfo p{
+  margin-top: .22rem;
   width: 100%;
-  background-color: rgb(243,243,243);
+  font-size: .012rem;
+  color: #000000;
 }
-.aboutWe .title{
-  width: 100%;
-  padding: .37rem 0 .34rem;
-  text-align: center;
-  font-size: .3rem;
-  color: #0a0a0a;
-}
-.aboutWe .content{
-  margin: 0 auto;
-  width: 11.76rem;
+.bottomIntroduce{
+  margin: .2rem auto 1.32rem;
+  width: 8.1rem;
   display: flex;
   justify-content: space-between;
 }
-.aboutWe .content .item{
-  width: 2.7rem;
+.bottomIntroduce .left{
+  width: 5.04rem;
 }
-.aboutWe .content .item .img{
-  width: 100%;
-  height: 1.72rem;
-}
-.aboutWe .content .item h4{
-  margin: .25rem 0 .15rem;
-  width: 100%;
-  text-align: center;
-  font-size: .23rem;
-}
-.aboutWe .content .item p{
-  margin-bottom: .52rem;
-  width: 100%;
-  font-size: .13rem;
-  line-height: .24rem;
-}
-.product{
-  width: 100%;
-  position: relative;
-}
-.product img{
-  width: 100%;
-}
-.product .button{
-  position: absolute;
-  top: 4rem;
-  left: 2.7rem;
-  width: 2.7rem;
-  height: .58rem;
-  border: 1px solid;
-  border-radius: 3px;
-  text-align: center;
-  line-height: .58rem;
-  color: #0a0a0a;
-  font-size: .22rem;
-}
-
-
-.briefContent{
-  margin: .35rem 0;
+.bottomIntroduce .left .top{
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
-.briefContent .goods{
-  flex: 1;
-  height: 6.27rem;
-  position: relative;
+.bottomIntroduce .left .top .img1{
+  width: 2.1rem;
+  height: 2.1rem;
 }
-.briefContent .goods:hover{
-  box-shadow: 0 0 .05rem .05rem rgba(18,39,65,.2)
+.bottomIntroduce .left .top .imgBox{
+  width: 2.85rem;
 }
-.briefContent .goods img{
+.bottomIntroduce .left .top .imgBox img{
+  width: 2.85rem;
+  height: 1.01rem;
+}
+.bottomIntroduce .left .top .imgBox img:first-child{
+  margin-bottom: .08rem;
+}
+.bottomIntroduce .left .bottom{
+  margin-top: .34rem;
   width: 100%;
 }
-.briefContent .goods p{
-  width: 100%;
-  text-align: center;
-  font-size: .28rem;
-  color: #0a0a0a;
-}
-.briefContent .goods .bottom{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.briefContent .goods .bottom .price{
+.bottomIntroduce .left .bottom h3{
   width: 100%;
   text-align: center;
-  line-height: .52rem;
   font-size: .22rem;
-  color: rgb(254,0,102);
+  color: #000000;
 }
-.briefContent .goods .bottom .button{
-  margin: 0 auto;
-  width: 1.56rem;
-  height: .46rem;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  line-height: .46rem;
-  font-size: .16rem;
+.bottomIntroduce .left .bottom .line{
+  margin: .15rem auto 0;
+  width: .86rem;
+  height: .02rem;
+  background-color: #333333;
 }
+.bottomIntroduce .left .bottom p{
+  margin-top: .2rem;
+  width: 100%;
+  font-size: .012rem;
+  color: #000000;
+}
+
+
+
+.bottomIntroduce .right{
+  width: 2.95rem;
+  height: 3.6rem;
+}
+.bottomIntroduce .right img{
+  width: 2.95rem;
+  height: 3.6rem;
+}
+
 
 .lineBottom{
   width: 100%;
@@ -366,6 +391,3 @@ img{
 .footer .lable:first-child{
   margin-left: 1.73rem;
 }
-
-
-
