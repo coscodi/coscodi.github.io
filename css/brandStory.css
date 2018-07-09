@@ -120,6 +120,7 @@ img{
   line-height: .8rem;
   font-size: .24rem;
   color: #0a0a0a;
+  text-decoration: none;
 }
 .header .bottom .left li .msgBox{
   display: none;
@@ -131,12 +132,17 @@ img{
   background-color: rgba(0, 0, 0, .6);
   color: #ffffff;
 }
-.header .bottom .left li a:hover{
+.header .bottom .left li:nth-child(2) a{
   background-color: #000000;
   color: #ffffff;
   text-decoration: none;
 }
-/*.header .bottom .left li:hover .msgBox{
+/*.header .bottom .left li a:hover{
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}*/
+/*.header .bottom .left li a:hover .msgBox{
   display: block;
   z-index: 9999;
 }*/
