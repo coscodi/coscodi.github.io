@@ -87,6 +87,7 @@ img{
   width: 100%;
   background-color: #ffffff;
   position: relative;
+  border-bottom: 1px solid #e9e9e9;
 }
 .header .icoImg{
   float: left;
@@ -119,6 +120,7 @@ img{
   line-height: .8rem;
   font-size: .24rem;
   color: #0a0a0a;
+  text-decoration: none;
 }
 .header .bottom .left li .msgBox{
   display: none;
@@ -130,12 +132,17 @@ img{
   background-color: rgba(0, 0, 0, .6);
   color: #ffffff;
 }
-.header .bottom .left li a:hover{
+.header .bottom .left li:nth-child(4) a{
   background-color: #000000;
   color: #ffffff;
   text-decoration: none;
 }
-/*.header .bottom .left li:hover .msgBox{
+/*.header .bottom .left li a:hover{
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}*/
+/*.header .bottom .left li a:hover .msgBox{
   display: block;
   z-index: 9999;
 }*/
@@ -164,130 +171,26 @@ img{
   width: 3.2rem;
   font-size: .16rem;
 }
-
-.banner{
-  width: 100%;
-}
-.banner .bannerItem{
-  position: relative;
-}
-.banner .bannerItem .button{
-  position: absolute;
-  top: 4rem;
-  left: 2.7rem;
-  width: 2.7rem;
-  height: .58rem;
-  border: 1px solid #ffffff;
-  border-radius: 3px;
-  text-align: center;
-  line-height: .58rem;
-  color: #ffffff;
-  font-size: .22rem;
-}
-
-.aboutWe{
-  width: 100%;
-  background-color: rgb(243,243,243);
-}
-.aboutWe .title{
-  width: 100%;
-  padding: .37rem 0 .34rem;
-  text-align: center;
-  font-size: .3rem;
-  color: #0a0a0a;
-}
-.aboutWe .content{
-  margin: 0 auto;
-  width: 11.76rem;
-  display: flex;
-  justify-content: space-between;
-}
-.aboutWe .content .item{
-  width: 2.7rem;
-}
-.aboutWe .content .item .img{
-  width: 100%;
-  height: 1.72rem;
-}
-.aboutWe .content .item h4{
-  margin: .25rem 0 .15rem;
-  width: 100%;
-  text-align: center;
-  font-size: .23rem;
-}
-.aboutWe .content .item p{
-  margin-bottom: .52rem;
-  width: 100%;
-  font-size: .13rem;
-  line-height: .24rem;
-}
-.product{
-  width: 100%;
-  position: relative;
-}
-.product img{
-  width: 100%;
-}
-.product .button{
-  position: absolute;
-  top: 4rem;
-  left: 2.7rem;
-  width: 2.7rem;
-  height: .58rem;
-  border: 1px solid;
-  border-radius: 3px;
-  text-align: center;
-  line-height: .58rem;
-  color: #0a0a0a;
-  font-size: .22rem;
-}
+/*以上是公共部分*/
 
 
-.briefContent{
-  margin: .35rem 0;
+.buyPassageContent{
   width: 100%;
-  display: flex;
+  height: 10rem;
 }
-.briefContent .goods{
-  flex: 1;
-  height: 6.27rem;
-  position: relative;
-}
-.briefContent .goods:hover{
-  box-shadow: 0 0 .05rem .05rem rgba(18,39,65,.2);
-}
-.briefContent .goods img{
+.buyPassageContent .banner{
+  margin-top: 0.35rem;
   width: 100%;
 }
-.briefContent .goods p{
-  width: 100%;
-  text-align: center;
-  font-size: .28rem;
-  color: #0a0a0a;
+.buyPassageContent ul{
+  margin: 0.67rem 0 0 1.15rem;
 }
-.briefContent .goods .bottom{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.briefContent .goods .bottom .price{
-  width: 100%;
-  text-align: center;
-  line-height: .52rem;
-  font-size: .22rem;
-  color: rgb(254,0,102);
-}
-.briefContent .goods .bottom .button{
-  margin: 0 auto;
-  width: 1.56rem;
-  height: .46rem;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  line-height: .46rem;
-  font-size: .16rem;
+.buyPassageContent ul li{
+  font-size: 0.22rem;
+  line-height: 0.7rem;
 }
 
+/*以下是公共部分*/
 .lineBottom{
   width: 100%;
   height: .4rem;
@@ -366,6 +269,3 @@ img{
 .footer .lable:first-child{
   margin-left: 1.73rem;
 }
-
-
-

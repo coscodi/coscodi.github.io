@@ -164,130 +164,95 @@ img{
   width: 3.2rem;
   font-size: .16rem;
 }
+/*以上是公共部分*/
 
-.banner{
+.goodsDetail{
   width: 100%;
 }
-.banner .bannerItem{
-  position: relative;
+.goodsDetail .detailTop{
+  width: 100%;
+  height: 8.45rem;
+  box-sizing: border-box;
+  padding-top: 0.44rem;
 }
-.banner .bannerItem .button{
-  position: absolute;
-  top: 4rem;
-  left: 2.7rem;
-  width: 2.7rem;
-  height: .58rem;
-  border: 1px solid #ffffff;
-  border-radius: 3px;
-  text-align: center;
-  line-height: .58rem;
-  color: #ffffff;
+.goodsDetail .detailTop .left{
+  float: left;
+  width: 7.2rem;
+}
+.goodsDetail .detailTop .left img{
+  width: 100%;
+}
+.goodsDetail .detailTop .right{
+  float: right;
+  width: 6.15rem;
+}
+.goodsDetail .detailTop .right .line1{
+  height: .22rem;
   font-size: .22rem;
+  font-weight: bolder;
 }
-
-.aboutWe{
-  width: 100%;
-  background-color: rgb(243,243,243);
+.goodsDetail .detailTop .right .line2{
+  margin-top: .15rem;
+  height: .34rem;
+  font-size: .34rem;
 }
-.aboutWe .title{
-  width: 100%;
-  padding: .37rem 0 .34rem;
-  text-align: center;
-  font-size: .3rem;
-  color: #0a0a0a;
+.goodsDetail .detailTop .right .line3{
+  margin-top: .4rem;
+  height: .25rem;
+  font-size: .25rem;
 }
-.aboutWe .content{
-  margin: 0 auto;
-  width: 11.76rem;
-  display: flex;
-  justify-content: space-between;
+.goodsDetail .detailTop .right .line3 span{
+  margin-left: 0.5rem;
+  color: rgb(150,150,150);
 }
-.aboutWe .content .item{
-  width: 2.7rem;
-}
-.aboutWe .content .item .img{
-  width: 100%;
-  height: 1.72rem;
-}
-.aboutWe .content .item h4{
-  margin: .25rem 0 .15rem;
-  width: 100%;
-  text-align: center;
-  font-size: .23rem;
-}
-.aboutWe .content .item p{
-  margin-bottom: .52rem;
-  width: 100%;
-  font-size: .13rem;
-  line-height: .24rem;
-}
-.product{
-  width: 100%;
-  position: relative;
-}
-.product img{
-  width: 100%;
-}
-.product .button{
-  position: absolute;
-  top: 4rem;
-  left: 2.7rem;
-  width: 2.7rem;
-  height: .58rem;
+.goodsDetail .detailTop .right .priceBox{
+  margin-top: .53rem;
+  width: 2.6rem;
+  height: 1.12rem;
   border: 1px solid;
-  border-radius: 3px;
-  text-align: center;
-  line-height: .58rem;
-  color: #0a0a0a;
+  padding: .2rem 0 0 .35rem;
+  box-sizing: border-box;
+  font-size: .24rem;
+  font-weight: bolder;
+  line-height: .4rem;
+}
+.goodsDetail .detailTop .right .priceBox .price{
+  color: rgb(150,150,150);
+  font-size: .26rem;
+}
+.goodsDetail .detailTop .right .describe{
+  margin-top: .65rem;
+  width: 100%;
   font-size: .22rem;
+  font-weight: bolder;
 }
-
-
-.briefContent{
-  margin: .35rem 0;
-  width: 100%;
-  display: flex;
-}
-.briefContent .goods{
-  flex: 1;
-  height: 6.27rem;
-  position: relative;
-}
-.briefContent .goods:hover{
-  box-shadow: 0 0 .05rem .05rem rgba(18,39,65,.2);
-}
-.briefContent .goods img{
-  width: 100%;
-}
-.briefContent .goods p{
-  width: 100%;
-  text-align: center;
+.goodsDetail .detailTop .right .describe .title{
   font-size: .28rem;
-  color: #0a0a0a;
 }
-.briefContent .goods .bottom{
-  position: absolute;
-  bottom: 0;
+.goodsDetail .detailTop .right .describe .info,.efficacy{
+  margin-top: .4rem;
+}
+.goodsDetail .goodsInfo{
   width: 100%;
 }
-.briefContent .goods .bottom .price{
+.goodsDetail .goodsInfo .title{
+  margin-bottom: .6rem;
   width: 100%;
-  text-align: center;
-  line-height: .52rem;
-  font-size: .22rem;
-  color: rgb(254,0,102);
+  height: .9rem;
+  background: rgb(248,248,248);
+  font-size: .28rem;
+  text-indent: 1em;
+  line-height: .9rem;
 }
-.briefContent .goods .bottom .button{
-  margin: 0 auto;
-  width: 1.56rem;
-  height: .46rem;
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  line-height: .46rem;
-  font-size: .16rem;
+.goodsDetail .goodsInfo img{
+  width: 100%;
 }
 
+
+
+
+
+/*以下是公共部分*/
 .lineBottom{
   width: 100%;
   height: .4rem;
@@ -366,6 +331,3 @@ img{
 .footer .lable:first-child{
   margin-left: 1.73rem;
 }
-
-
-

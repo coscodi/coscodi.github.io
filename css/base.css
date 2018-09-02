@@ -16,7 +16,7 @@ a{text-decoration:none;cursor: pointer}
 a:hover{text-decoration:underline;outline:none}
 a.ie6:hover{zoom:1}
 a:focus{outline:none}
-a:hover,a:active{outline:none}:focus{outline:none}
+a:hover,a:active{outline:none; text-decoration: none;}:focus{outline:none}
 sub,sup{vertical-align:baseline}
 button,input[type="button"], input[type="submit"] {line-height:normal !important;}
 /*img*/
