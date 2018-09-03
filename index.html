@@ -224,9 +224,17 @@
 
     <script>
         $(function(){
-            var scrollTop =$('#header').height()
-            var contHeight =$('#header .content').height()
             $(window).scroll(function(){
+                var scrollTop =$('#header').height()
+                var marginTop = 0.24-0.24*$(window).scrollTop()/scrollTop > 0 ? 0.24-0.24*$(window).scrollTop()/scrollTop : 0;
+                var marginLeft = 6.215-5.915*$(window).scrollTop()/scrollTop > 0.3 ? 6.215-5.915*$(window).scrollTop()/scrollTop : 0.3;
+                var marginRight = 6.215-6.215*$(window).scrollTop()/scrollTop > 0 ? 6.215-6.215*$(window).scrollTop()/scrollTop : 0;
+                $(".icoImg").css({
+                    'margin-top': marginTop + 'rem',
+                    'margin-left': marginLeft + 'rem',
+                    'margin-right': marginRight + 'rem'
+                })
+
                 if($(window).scrollTop() > scrollTop){
                     $("#header .content").css({
                         "position":"fixed",
@@ -237,10 +245,18 @@
                     $("#header .msgBox").css({
                         "top": ".8rem"
                     });
-                    $(".icoImg").removeClass("icoGoBack")
-                    $("#header .content .bottom").removeClass("bottomGoBack")
-                    $(".icoImg").addClass("iconMove")
-                    $("#header .content .bottom").addClass("bottomMove")
+                    $(".icoImg").css({
+                        'width': '2.056rem',
+                        'height': '.752rem'
+                    })
+                    $("#header .content .bottom").css({
+                        'width': '80%',
+                        'margin-right': '.3rem'
+                    })
+                    // $(".icoImg").removeClass("icoGoBack")
+                    // $("#header .content .bottom").removeClass("bottomGoBack")
+                    // $(".icoImg").addClass("iconMove")
+                    // $("#header .content .bottom").addClass("bottomMove")
                 }else{
                     $("#header .content").css({
                         "position":"relative",
@@ -249,10 +265,18 @@
                     $("#header .msgBox").css({
                         "top": "1.98rem"
                     });
-                    $(".icoImg").removeClass("iconMove")
-                    $(".icoImg").addClass("icoGoBack")
-                    $("#header .content .bottom").removeClass("bottomMove")
-                    $("#header .content .bottom").addClass("bottomGoBack")
+                    $(".icoImg").css({
+                        'width': '2.57rem',
+                        'height': '.94rem'
+                    })
+                    $("#header .content .bottom").css({
+                        'width': '100%',
+                        'margin-right': 0
+                    })
+                    // $(".icoImg").addClass("icoGoBack")
+                    // $("#header .content .bottom").addClass("bottomGoBack")
+                    // $(".icoImg").removeClass("iconMove")
+                    // $("#header .content .bottom").removeClass("bottomMove")
                 }
             });
         });

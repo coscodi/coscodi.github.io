@@ -172,6 +172,16 @@ img{
   font-size: .16rem;
 }
 
+.nothing{
+  width: 100%;
+  background-color: rgb(237,237,237);
+  padding: 0.8rem 0;
+}
+.nothing img{
+  margin: 0 auto;
+  width: 9rem;
+}
+
 .banner{
   width: 100%;
   display: flex;
